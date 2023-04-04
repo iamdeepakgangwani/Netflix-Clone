@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Netflix</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bg-wrapp {
+            /* This method is done to create a color sheet on the given image */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/IN-en-20230320-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: min-content;
+            /* height: 150vh; */
+            /* display: flex; */
+            /* align-items: center; */
+            justify-content: space-around;
+            /* flex-direction: column; */
+            /* position: relative; */
+            /* shorthand property */
+            /* background: url(images/IN-en-20230320-popsignuptwoweeks-perspective_alpha_website_medium.jpg)center/cover no-repeat; */
+        }
+
+        .form-data {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+            /* background: rgba(0, 0, 0, .2); */
+            /* background-image: linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 60%, rgba(0, 0, 0, .8)); */
+            padding: 3rem;
+            /* padding-bottom: 100px; */
+            width: auto;
+            /* font-size: small; */
+            /* height: fit-content; */
+        }
+
+
+
+        .form-control {
+            /* color: red; */
+            /* color: white; */
+            border: none !important;
+            transition: none !important;
+            background-color: #333333 !important;
+            /* color: #b0afaf !important; */
+        }
+
+        .form-control:focus {
+            /* color: red; */
+            border-bottom: 3px solid #e87033 !important;
+            background-color: #333333 !important;
+            border-color: none !important;
+            outline: 10 !important;
+            box-shadow: none !important;
+            transition: all 0.3s;
+        }
+
+
+        #footer-list {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            height: auto;
+            color: #b0afaf;
+        }
+
+        #footer-list a {
+
+            color: #b0afaf;
+            text-decoration: none;
+
+        }
+
+        #footer-list a:hover {
+            text-decoration: underline;
+        }
+
+        .slider {
+            color: rgb(45, 84, 240);
+            text-decoration: none;
+
+        }
+
+        .slider:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .data a {
+            text-decoration: none;
+        }
+
+        .data a {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .form-footer-setting a {
+            text-decoration: none;
+        }
+
+        .form-footer-setting a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg-wrapp">
+
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img style="width: 200px
+                ; height: 150px;" src="images/netflix-stream.gif" alt=""></a>
+            </div>
+
+        </nav>
+
+
+        <div class="container" style="margin-bottom: 10%;">
+            <div class="col-lg-4 col-md-8 col-sm-10 col-12 mx-lg-auto mx-sm-auto mx-auto">
+                <div class="form-data" data-tilt>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 mx-lg-auto mx-md-auto mx-sm-auto mx-auto">
+                        <div class="form-title mb-4">
+                            <h2 class="text-white fw-bold">Sign In</h2>
+
+                        </div>
+                        <form action="" method="">
+                            <div class="form-floating mb-3 mt-0">
+                                <input type="email number" class="form-control text-white" id="floatingInput"
+                                    placeholder="name@example.com" required>
+                                <label style="color: #8c8c8c;" for="floatingInput">Email or phone number</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" id="password" class="form-control text-white"
+                                    id="floatingPassword" placeholder="Password" required>
+                                <label style="color: #8c8c8c;" for="floatingPassword">Password</label>
+                            </div>
+                            <div class="input-group mt-5 mb-1 d-grid gap-2 ">
+                                <button class="btn btn-outline-danger rounded" type="button "
+                                    onclick="toggle(this)">Show Password</button>
+                                <input class="btn btn-danger btn-lg fw-bold rounded w-100" type="submit" name="submit"
+                                    value="Sign In">
+                            </div>
+                            <div class="mt-2 form-footer-setting">
+                                <div class="form-check form-check-inline ">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label style="color: #b0afaf;" class="form-check-label"
+                                        for="inlineCheckbox1">Remember
+                                        me</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <!-- <label style="color: #b0afaf;" class="form-check-label" for="inlineCheckbox2">Need
+                                        help?</label> -->
+                                    <a style="color: #b0afaf;" href="http://" target="_blank"
+                                        rel="noopener noreferrer">Need
+                                        help?</a>
+                                </div>
+                                <div class="form-footer">
+                                    <h5 style="color: #757575;" class="mt-3 mb-2 fs-6">New to Netflix? <span
+                                            class="fw-normal"><a class="text-white" href="index.html" target="_blank"
+                                                rel="noopener noreferrer">Sign up
+                                                now.</a></span></h5>
+                                </div>
+
+                                <div style="color: #757575; font-size: small;">
+                                    <div>This page is protected by Google reCAPTCHA to ensure you're not a bot. <span
+                                            class="slider">Learn
+                                            more</span></div>
+                                    <div class="data mt-3" style="opacity: 0;">
+                                        The information collected by Google reCAPTCHA is subject to the Google <a
+                                            href="https://policies.google.com/privacy" target="_blank"
+                                            rel="noopener noreferrer">Privacy Policy</a> and <a
+                                            href="https://policies.google.com/terms" target="_blank"
+                                            rel="noopener noreferrer">Terms of Service</a>, and is used for providing,
+                                        maintaining, and improving the reCAPTCHA service and for general security
+                                        purposes (it is not used for personalised advertising by Google).
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer-list" class="mt-5 p-5 text-start" style="margin-bottom: 0%;">
+            <div class="container ">
+                <h6 style="padding-left: 35px;">Questions? Call<a href="http://" target="_blank"
+                        rel="noopener noreferrer"> 000-800-919-1694</a></h6>
+                <div class="container px-0">
+                    <div class="row ">
+                        <div class="col ">
+                            <ul style="list-style-type: none;">
+                                <li class="my-3"><a href="http://" target="_blank" rel="noopener noreferrer">FAQ</a>
+                                </li>
+
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer">Cookie Preferences</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col">
+                            <ul style="list-style-type: none;">
+                                <li class="my-3"><a href="http://" target="_blank" rel="noopener noreferrer">Help
+                                        Centre</a></li>
+
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer">Corporate
+                                        Information</a></li>
+
+                        </div>
+                        <div class="col">
+
+                            <ul style="list-style-type: none;">
+                                <li class="my-3"><a href="http://" target="_blank" rel="noopener noreferrer">Terms of
+                                        Use</a></li>
+                        </div>
+                        <div class="col ">
+                            <ul style="list-style-type: none;">
+                                <li class="my-3"><a href="http://" target="_blank" rel="noopener noreferrer">Privacy</a>
+                                </li>
+                        </div>
+                    </div>
+
+                    <div class="row mx-4 mt-3" style="width: 150px;">
+
+                        <div id="google_element"></div>
+                        <img src="images/logo.png" alt="">
+                        <div class="mt-2">Netflix India</div>
+                        <!-- <select name="" id="" class="form-select bg-black text-white p-3 border">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                            <option selected class="text-white bg-black">🌐English</option>
+                            <option value="1" class="text-white bg-black">🌐हिन्दी</option>
+                        </select> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        let pass = document.getElementById("password");
+        function toggle(elem) {
+            let type = pass.getAttribute('type');
+            if (type === "password") {
+                pass.setAttribute('type', 'text');
+                elem.innerText = "Hide Password";
+            }
+            else {
+                pass.setAttribute("type", "password");
+                elem.innerText = "Show Password";
+            }
+        }
+
+    </script>
+
+    <!-- steps to add language selector in the web page so that any one can read the file with different language option-->
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+    <script>
+
+        // creating a function to call google translate 
+
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement("google_element");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
